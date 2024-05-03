@@ -14,6 +14,7 @@
 }
 
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -28,6 +29,50 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+/*** Header ***/
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 19px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header a {
+    color: #000;
+
+    text-align: center;
+    /* Nav/Standard */
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu {
+    padding-top: 16px;
+    padding-right: 50px;
+}
+
+.menu a {
+    padding-top: 14px;
+}
+
+.menu a:hover {
+    border-top: solid 2px var(--main-color);
+    color: var(--main-color);
+}
+
+.menu .active {
+    margin-right: 68px;
 }
 
 .section-title {
