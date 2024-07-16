@@ -464,10 +464,6 @@ main {
     width: 25%;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
 }
 
 .card-activity img {
@@ -604,7 +600,7 @@ footer {
     }
 
     .card-activity img {
-        height: 200px;/
+        height: 200px;
     }
 }
 
@@ -761,7 +757,7 @@ footer {
         /* padding-top: 20px; */
     }
 
-    .card-activity div p {
+    .card-activity div h4 {
         font-size: 18px;
     }
 
