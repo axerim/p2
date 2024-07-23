@@ -17,19 +17,14 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    /* gap: 35px; */
 }
 
 .main-container {
-    display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1440px;
-    gap: 35px;
     padding: 0 50px;
-    /* margin: 230px; */
-    /* box-sizing: border-box; */
-    margin: auto;
+    box-sizing: border-box;
 }
 
 a {
@@ -37,7 +32,10 @@ a {
     text-decoration: none;
 }
 
-ul, ol, ul li, ol li {
+ul,
+ol,
+ul li,
+ol li {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
@@ -421,136 +419,71 @@ main {
 /*..............................*/
 /**** 3 iéme SECTION . ACTIVITE */
 /********************* ACTIVITE */
-.activity {
-    display: flex;
-    flex-direction: column;
-    /* align-items: flex-start ; */
-    /* justify-content: space-aroundr; */
-    /* align-self: stretch; */
-    /* height: 499PX; */
-    /* width: 1280PX; */
-    width: auto;
-    gap: 30px;
+
+.activites {
     padding: 30px;
-    /* background-color: cadetblue; */
+    margin-bottom: 35px;
 }
 
-.activity h2 {
-    margin: 0px;
-    font-family: Raleway;
-    font-size: 22px;
-    font-weight: 700;
+.activites h2 {
+    margin-bottom: 30px;
 }
 
-.frame {
+.activites-cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /* align-items: flex-start; */
-    /* align-self: stretch; */
-    /* height: 439PX; */
-    width: 100%;
-    gap: 30px;
+    justify-content: space-between;
 }
 
-.card-activity {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /*flex: 1 0 0;*/
-    /* height: 439px; */
-    /* width: 298px; */
-    width: 25%;
+.activites-cards a {
+    width: 23%;
+}
+
+.activites-cards .card {
+    background-color: white;
     border-radius: 20px;
-    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-}
-
-.card-activity img {
-    height: 380px;
-    width: 100%;
-    flex-shrink: 0;
-    align-self: stretch;
-    object-fit: cover;
-    /* object-position: center; */
-    border-radius: 20px 20px 0px 0px;
-}
-
-.card-activity div {
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    align-self: stretch;
-    height: 19px;
-    gap: 10px;
-    padding: 20px 19px;
-    border-radius: 0px 0px 20px 20px;
-    background: var(--White, #FFF);
 }
 
-.card-activity div p {
-    margin: 0px;
-    font-family: Raleway;
-    font-size: 16px;
-    font-weight: 700;
+.activites-cards img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 380px;
 }
 
+.activites-cards h3 {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
 
 
 /*...............................*/
 /******* 4 iéme SECTION . FOOTER */
 /************************ FOOTER */
 footer {
+    background: var(--main-bg-color);
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    align-self: stretch;
-    /* height: 163px; */
-    height: auto;
-    /* width: 1340px; */
-    width: 100%;
-    background: var(--Grey, #F2F2F2);
 }
 
-.services {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* align-self: stretch; */
-    /* flex: 1 0 0; */
-    height: 123px;
-    /* width: 407px; */
-    width: 33.333%;
-    gap: 15px;
+footer nav {
     padding: 20px;
-}
-
-.services nav {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 33%;
 }
 
-.services nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding-left: 0px;
-}
-
-.services nav .praragraphe {
-    margin: 0px;
-    font-family: Raleway;
+footer h2 {
     font-size: 18px;
+    font-style: normal;
     font-weight: 700;
-}
-
-.services nav ul li a p {
-    margin: 0px;
-    font-family: Raleway;
-    font-size: 16px;
-    font-weight: 400;
+    line-height: normal;
+    margin: 0;
 }
 
 /*..............................*/
@@ -599,8 +532,14 @@ footer {
         font-size: 13px;
     }
 
-    .card-activity img {
-        height: 200px;
+    .activites img {
+        height: 193.5px;
+    }
+
+    .activites-cards h3 {
+        display: flex;
+        height: 30px;
+        align-items: center;
     }
 }
 
@@ -667,11 +606,6 @@ footer {
     .infos-groupe h1 {
         font-size: 22px;
         /* text-align: justify; */
-    }
-
-    .form {
-        /* justify-content: stretch; */
-        /* width: 335px; */
     }
 
     /*.......................*/
@@ -743,55 +677,21 @@ footer {
     /*.......................*/
     /* ACTIVITES A MARSEILLE */
 
-    .activity h2 {
-        font-size: 26px;
+    .activites-cards a {
+        margin-bottom: 15px;
     }
 
-    .frame {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card-activity {
-        width: 100%;
-        /* padding-top: 20px; */
-    }
-
-    .card-activity div h4 {
-        font-size: 18px;
-    }
-
-    .card-activity img {
-        object-fit: cover;
-        object-position: center;
+    .activites img {
+        height: 141px;
     }
 
     /*.........FOOTER..............*/
 
     footer {
-        display: flex;
         flex-direction: column;
-        height: auto;
+    }
+
+    footer nav {
         width: auto;
-        gap: 50px;
-        padding: 30px;
-    }
-    .services {
-        height: auto;
-        width: 264px;
-    }
-
-    .services nav ul li a p,
-    .services nav ul li a .praragraphe {
-        font-size: 18px;
-        padding: 0px;
-    }
-
-    .services nav {
-        height: auto;
-        gap: 15px;
     }
 }
-
-
-
